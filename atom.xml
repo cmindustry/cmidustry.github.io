@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="cmindustry.github.io/"/>
-  <updated>2020-08-08T13:35:51.087Z</updated>
+  <updated>2020-06-24T13:57:39.025Z</updated>
   <id>https://cmindustry.github.io/</id>
   
   <author>
@@ -15,25 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test4</title>
-    <link href="cmindustry.github.io/2020/08/08/test5/"/>
-    <id>https://cmindustry.github.io/2020/08/08/test5/</id>
-    <published>2020-08-08T13:31:20.000Z</published>
-    <updated>2020-08-08T13:35:51.087Z</updated>
-    
-    
-    <summary type="html">描述5</summary>
-    
-    
-    
-    <category term="Cat" scheme="https://cmindustry.github.io/categories/Cat/"/>
-    
-    
-    <category term="Tag" scheme="https://cmindustry.github.io/tags/Tag/"/>
-    
-  </entry>
   
   <entry>
     <title>继父的图书馆</title>
