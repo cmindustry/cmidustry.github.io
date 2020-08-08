@@ -14,6 +14,7 @@
   <entry>
     <title>test2</title>
     <link href="cmindustry.github.io/2020/08/08/test2/"/>
+    <id>https://cmindustry.github.io/2020/08/08/test2/</id>
     <published>2020-08-08T12:44:20.000Z</published>
     <updated>2020-08-08T12:44:49.379Z</updated>
     
@@ -22,16 +23,17 @@
     
     
     
-    <category term="Cat" scheme="cmindustry.github.io/categories/Cat/"/>
+    <category term="Cat" scheme="https://cmindustry.github.io/categories/Cat/"/>
     
     
-    <category term="Tag" scheme="cmindustry.github.io/tags/Tag/"/>
+    <category term="Tag" scheme="https://cmindustry.github.io/tags/Tag/"/>
     
   </entry>
   
   <entry>
     <title>继父的图书馆</title>
     <link href="cmindustry.github.io/2020/06/24/library/"/>
+    <id>https://cmindustry.github.io/2020/06/24/library/</id>
     <published>2020-06-24T13:24:17.000Z</published>
     <updated>2020-06-24T13:57:39.025Z</updated>
     
@@ -40,7 +42,7 @@
     
     
     
-    <category term="mob狛" scheme="cmindustry.github.io/categories/mob%E7%8B%9B/"/>
+    <category term="mob狛" scheme="https://cmindustry.github.io/categories/mob%E7%8B%9B/"/>
     
     
   </entry>
@@ -48,6 +50,7 @@
   <entry>
     <title>SIREN</title>
     <link href="cmindustry.github.io/2020/05/23/SIREN/"/>
+    <id>https://cmindustry.github.io/2020/05/23/SIREN/</id>
     <published>2020-05-23T14:45:12.000Z</published>
     <updated>2020-05-31T12:56:37.503Z</updated>
     
@@ -56,7 +59,7 @@
     
     
     
-    <category term="mob狛" scheme="cmindustry.github.io/categories/mob%E7%8B%9B/"/>
+    <category term="mob狛" scheme="https://cmindustry.github.io/categories/mob%E7%8B%9B/"/>
     
     
   </entry>
@@ -64,6 +67,7 @@
   <entry>
     <title>曾经被变态杀人狂绑架</title>
     <link href="cmindustry.github.io/2020/03/09/%E5%86%8D%E6%94%BE%E9%80%81/"/>
+    <id>https://cmindustry.github.io/2020/03/09/%E5%86%8D%E6%94%BE%E9%80%81/</id>
     <published>2020-03-09T13:20:08.000Z</published>
     <updated>2020-06-24T13:25:30.764Z</updated>
     
@@ -72,10 +76,10 @@
     
     
     
-    <category term="mob狛" scheme="cmindustry.github.io/categories/mob%E7%8B%9B/"/>
+    <category term="mob狛" scheme="https://cmindustry.github.io/categories/mob%E7%8B%9B/"/>
     
     
-    <category term="18-19" scheme="cmindustry.github.io/tags/18-19/"/>
+    <category term="18-19" scheme="https://cmindustry.github.io/tags/18-19/"/>
     
   </entry>
   
