@@ -5,10 +5,28 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="cmindustry.github.io/"/>
-  <updated>2020-08-08T12:41:42.334Z</updated>
+  <updated>2020-08-08T12:44:49.379Z</updated>
   <id>cmindustry.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test2</title>
+    <link href="cmindustry.github.io/2020/08/08/test2/"/>
+    <published>2020-08-08T12:44:20.000Z</published>
+    <updated>2020-08-08T12:44:49.379Z</updated>
+    
+    
+    <summary type="html">描述2</summary>
+    
+    
+    
+    <category term="Cat" scheme="cmindustry.github.io/categories/Cat/"/>
+    
+    
+    <category term="Tag" scheme="cmindustry.github.io/tags/Tag/"/>
+    
+  </entry>
   
   <entry>
     <title>test1</title>
