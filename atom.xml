@@ -6,10 +6,34 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="cmindustry.github.io/"/>
-  <updated>2020-08-08T12:44:49.379Z</updated>
+  <updated>2020-08-08T13:15:52.621Z</updated>
   <id>https://cmindustry.github.io/</id>
   
+  <author>
+    <name>anonymouskomaedakiller</name>
+    
+  </author>
+  
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test3</title>
+    <link href="cmindustry.github.io/2020/08/08/test3/"/>
+    <id>https://cmindustry.github.io/2020/08/08/test3/</id>
+    <published>2020-08-08T13:14:20.000Z</published>
+    <updated>2020-08-08T13:15:52.621Z</updated>
+    
+    
+    <summary type="html">描述3</summary>
+    
+    
+    
+    <category term="Cat" scheme="https://cmindustry.github.io/categories/Cat/"/>
+    
+    
+    <category term="Tag" scheme="https://cmindustry.github.io/tags/Tag/"/>
+    
+  </entry>
   
   <entry>
     <title>test2</title>
