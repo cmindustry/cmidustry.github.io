@@ -613,8 +613,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Baskerville, Georgia, Liberation Serif, Noto Serif,
-    Noto Serif CJK SC, serif;
+  font-family: Baskerville, Georgia, Liberation Serif, Noto Sans Display, Roboto,
+    serif;
 }
 a {
   color: #222;
