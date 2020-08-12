@@ -603,8 +603,8 @@ h6 {
 }
 body {
   font-family: Baskerville, Hoefler Text, Garamond, Times New Roman,
-    Liberation Sans, CWTEX\\-F, Noto Sans, Noto Sans CJK, Noto Sans CJK SC,
-    PingFang SC, sans, sans-serif;
+    Liberation Sans, Roboto, CWTEX\\-F, Noto Sans Thin, Noto Sans CJK Thin,
+    Noto Sans CJK SC Thin, PingFang SC, sans, sans-serif;
   font-size: 16px;
 }
 h1,
