@@ -727,14 +727,14 @@ blockquote {
   font-size: 0.8em;
   margin-bottom: 8px;
   color: #aeb4b9;
-  font-weight: lighter;
+  font-weight: 200;
 }
 
 .home .post-excerpt {
   text-align: left;
   font-size: 1em;
   position: relative;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .home .article-more-link {
@@ -749,7 +749,7 @@ blockquote {
 
 .home .post-title {
   font-size: 1.3em;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .home h1,
