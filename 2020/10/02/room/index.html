@@ -1,104 +1,168 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="" />
+    <title>
+        CMIndustry
+    </title>
+    <!-- favicon -->
     
-    <title>那个房间 | CMIndustry</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta name="description" content="发现每个不做爱就出不来的房间的开门机制都不完全一样，而且很模糊，不太讲道理，细思恐极，所以想让狛枝探索一下（把狛枝一个人关进不做爱就出不来的房间）">
-<meta property="og:type" content="article">
-<meta property="og:title" content="那个房间">
-<meta property="og:url" content="https://cmindustry.github.io/2020/10/02/room/index.html">
-<meta property="og:site_name" content="CMIndustry">
-<meta property="og:description" content="发现每个不做爱就出不来的房间的开门机制都不完全一样，而且很模糊，不太讲道理，细思恐极，所以想让狛枝探索一下（把狛枝一个人关进不做爱就出不来的房间）">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-10-02T15:47:56.000Z">
-<meta property="article:modified_time" content="2020-10-02T15:47:56.000Z">
-<meta property="article:author" content="anonymouskomaedakiller">
-<meta property="article:tag" content="Mature">
-<meta name="twitter:card" content="summary"> 
-    <link
-      rel="alternate"
-      href="/atom.xml"
-      title="CMIndustry"
-      type="application/atom+xml"
-    />
-     
-    <link rel="icon" href="/favicon.ico" />
-     
-<link rel="stylesheet" href="/css/typing.css">
+            
+<link rel="stylesheet" href="/css/style.css">
 
-  <meta name="generator" content="Hexo 5.2.0"></head>
-</html>
 
-  
-    
-      <body>
-    
-  
-      <div id="container" class="container">
-        <article
-  id="post-room"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
->
-  <header id="header" class="header">
-    
-        <nav id="main-nav" class="main-nav">
-    
-    
-      <a class="main-nav-link" href="/">首页</a>
-    
-      <a class="main-nav-link" href="/archives">归档</a>
-    
-      <a class="main-nav-link" href="/catalog">目录</a>
-    
-      <a class="main-nav-link" href="/about">关于</a>
-    
-  </nav>
-</header>
+                <!-- highlight -->
+                <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/10.4.1/styles/github-gist.min.css" />
+                <script src="//cdn.bootcss.com/highlight.js/10.4.1/highlight.min.js"></script>
+                <script>
+                    hljs.initHighlightingOnLoad()
+                </script> -->
 
-  <hr />
-  <div class="article-inner">
-     
-    <header class="article-header">
-      
-  
-    <h1 class="article-title" itemprop="name">
-      那个房间
+
+                <script src="/js/hexo-infinite-scroll/dist/main.js"></script>
+
+                <script>
+                    infiniteScroll()
+
+                    window.addEventListener('DOMContentLoaded', function() {
+                        const [
+                            mainTitle,
+                            mobileMenu,
+                            mobileMainTitle,
+                            mobileMenuBtn,
+                            ipadMenuBtn,
+                            aside,
+                            closeBtn,
+                        ] = getEle(
+                            '#main-title',
+                            '.mobile-menu',
+                            '.mobile-menu h3',
+                            '.mobile-menu button',
+                            '.ipad-menu',
+                            'aside',
+                            'aside .close',
+                        )
+                        const io = new IntersectionObserver(entries => {
+                            if (entries[0].intersectionRatio <= 0) {
+                                mobileMainTitle.classList.remove('invisibile')
+                            } else {
+                                mobileMainTitle.classList.add('invisibile')
+                            }
+                        })
+                        io.observe(mainTitle)
+
+                        clickToggleAside(mobileMenuBtn)
+                        clickToggleAside(ipadMenuBtn)
+                        clickToggleAside(closeBtn, false)
+
+                        const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+                        if (isMenuVisible) document.body.style.background = 'none'
+
+                        function getEle(...args) {
+                            return args.map(arg => document.querySelector(arg))
+                        }
+
+                        function clickToggleAside(btn, show = true) {
+                            btn.addEventListener('click', function() {
+                                if (show) {
+                                    aside.style.display = 'block'
+                                } else {
+                                    aside.style.display = 'none'
+                                }
+                            })
+                        }
+                    })
+                </script>
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="CMIndustry" type="application/atom+xml">
+</head>
+
+<body style="background: url(https://s3.ax1x.com/2020/12/13/re2vYq.png) #C2C8C2">
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://s3.ax1x.com/2020/12/13/re2vYq.png) #C2C8C2">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                CMIndustry
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            CMIndustry
+        </a>
     </h1>
-  
+    <h2 class="desc">
+        
+    </h2>
 
-    </header>
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://archiveofourown.org/users/Eye_Hate_Music">
+                    AO3
+                </a>
+            </li>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://weibo.com/6266120422/">
+                    微博
+                </a>
+            </li>
+            
+            <li>
+                <a href="mailto:cmindustri@outlook.com">
+                    邮箱
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://cmindustry.github.io/atom.xml">
+                    RSS
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    <h2 class="post-title">
+        那个房间
+    </h2>
+    
+    
+    <h4 class="post-cat">
+        <a href="/categories/%E6%97%A5%E7%8B%9B/">
+            日狛
+        </a>
+    </h4>
+    
     
 
-    <ul class="article-meta">
-      
-      <li>
-        <span class="label">Category:</span>
+    
+    
+        <p class="post-tag">
+            <a href="/tags/Mature/">
+                Mature
+            </a>
+        </p>
         
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%97%A5%E7%8B%9B/">日狛</a>
-  </div>
+        
+
+        <p class="post-date">
+            2020-10-02
+        </p>    
 
 
-      </li>
-       
-      <li>
-        <span class="label">Tag:</span>
-         <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mature/" rel="tag">Mature</a></li></ul> 
-
-      </li>
-      
-    </ul>
-    <br />
-
-    <div class="article-entry typo" itemprop="articleBody">
-      <style type="text/css">p.message{text-align:center}.meta h1{font-size:1.5em;text-align:center}.meta h2{font-size:1.25em;text-align:center}.meta h2{page-break-before:always}.meta .byline{text-align:center}.meta dl.tags{border:1px solid;padding:1em;vertical-aligh:bottom;font-size:0.8em}.meta dd{margin:-2em 0 0 10em;display：inline}.meta .endnote-link{font-size:.8em}#chapters{font-family:"Nimbus Roman No9 L","Times New Roman",serif;padding:1em}.userstuff{font-family:"Nimbus Roman No9 L","Times New Roman",serif;padding:1em}.toc-heading{display:none}.note{color:#1c1c1c;text-align:left;font-size:0.8em;margin:1em} </style>
+    <div class="post-content">
+        <style type="text/css">p.message{text-align:center}.meta h1{font-size:1.5em;text-align:center}.meta h2{font-size:1.25em;text-align:center}.meta h2{page-break-before:always}.meta .byline{text-align:center}.meta dl.tags{border:1px solid;padding:1em;vertical-aligh:bottom;font-size:0.8em}.meta dd{margin:-2em 0 0 10em;display：inline}.meta .endnote-link{font-size:.8em}#chapters{font-family:"Nimbus Roman No9 L","Times New Roman",serif;padding:1em}.userstuff{font-family:"Nimbus Roman No9 L","Times New Roman",serif;padding:1em}.toc-heading{display:none}.note{color:#1c1c1c;text-align:left;font-size:0.8em;margin:1em} </style>
 
   <div class="meta">
     <dl class="tags">
@@ -119,9 +183,8 @@
       <dt>Stats:</dt>
       <dd>
         Published: 2020-10-02
-          Completed: 2020-12-11
-          Chapters: 2/2
-        Words: 10669
+          Chapters: 1/2
+        Words: 5424
       </dd>
     </dl>
  <div class="note">
@@ -129,15 +192,16 @@
 </div>
   </div>
   <br/>
+
 <div class="meta group">
   <h2 class="heading">Chapter 1</h2>
 
 
-</div>
- <p>设计这个房间首先需要保证被试者不做爱就绝对出不来，这是比较容易做到的。为了避免在门和锁的可靠性上耗费太多时间，我们派了工作人员在外面看守，在房间里安装摄像头。一般来说里面的人不会有强行破门的条件，但如果真的进行到那一步，会有人及时制止。</p>
+</div> 
+  <p>设计这个房间首先需要保证被试者不做爱就绝对出不来，这是比较容易做到的。为了避免在门和锁的可靠性上耗费太多时间，我们派了工作人员在外面看守，在房间里安装摄像头。一般来说里面的人不会有强行破门的条件，但如果真的进行到那一步，会有人及时制止。</p>
 <p>设计房间必须解决如何判断做爱的问题。一、什么是做爱，二、如何判定。考虑到被试者身上不会穿戴传感器，而房间里装有摄像头，也许会用到光学识别技术，肢体动作识别，单目标跟踪，语音信息也可加以利用；麻烦的是伦理上的问题，敏锐的机械师左右田和一意识到了这一点。他不知道这里的谁有权做出判断，之后的答案又由谁执行，显然是至少比他高两级的人物，因为从来没有人告诉他结论，只是在这一天把他带到已经建好的房间前。</p>
 <p>狛枝凪斗是志愿者，他是自愿参加的。</p>
-<p> </p>
+<p> </p>
 <p>Day 1</p>
 <p>自动门合上时，不仅外界的声音被完全隔绝，电梯运行的声音也听不到了，左右田盯着头上嵌在厢顶的灯，在不甚自然的寂静中花了几秒钟回忆今天的早餐，回过神来，身体的知觉渐渐只剩下停留在耳膜上的轻微肿胀感和一只袖子比另一只短一点点造成一边肩关节处的轻微紧绷感。最重要的是，重力的影响受到蒙蔽和干扰，不再像踩在土地上，他所去的地方和他来的地方之间只有一条路线，电梯的出现说明这个方向往往不同于重力的方向。扯长袖口之后，另一边却也变得有点绷了。鞋子的底太薄。硌。在浑身上下的不舒服一一暴露出来时，电梯来到房间所在的楼层，里面沉闷的空气令左右田想要仰头确认窗户和出风口的位置，却没找到任何窗户。</p>
 <p>怀着不安的心情绕过大厅缓慢地走到监控室门口，左右田推开门，发现监控室里已经坐着一个人。注意到左右田，他友善地用手势招呼他去坐旁边的空位置。</p>
@@ -151,7 +215,7 @@
 <p>他没有说出要求，也没有提问，那么他说的话就不重要。左右田有点不爽地按照操作手册上的指示沉默地等待他的回复。</p>
 <p>接下来的五分钟他都没再说话，也没有其他特别的举动。坐在床边饶有兴味地一本一本翻看床头柜上的色情杂志，但没有在任何一本上停留更长时间，然后在一个画满草莓的盒子里找到了色情录像，粗略地翻了翻。六点左右，我们的人给他送去晚饭，虽然甜点几乎全剩下了，但姑且是吃完了。他脑袋贴地蹲在旁边检查草莓床的床底时向我们提议以后的送餐去掉甜点和饮料里的糖。</p>
 <p>广义上的糖是人类最主要的能量来源，于是左右田的同事拒绝了他。他不满地咬住嘴唇沉默了一会儿，嘟囔道：“我就是不喜欢。”后来他在草莓床上躺下，把被子平平整整地盖在身上睡了。</p>
-<p> </p>
+<p> </p>
 <p><br/>
 Day 2</p>
 <p>狛枝在探索房间，沿着电线找到了藏在房间里的广播系统，又找到了一部分放在衣柜里的成人玩具，草莓图案带的飞机杯，草莓形状的肛塞，让人联想到草莓的粉红色带斑点的情趣内衣。</p>
@@ -164,11 +228,11 @@ Day 2</p>
 <p>说实话，狛枝凪斗有点太爱说话了。我们这里的工作人员没有一个爱说话的，很少听见同事之间聊天，更别提跟被试者聊了。</p>
 <p>他又说：“我认识一个下围棋从不会输的人。一开始我觉得太棒了，从此围棋的问题就全部解决了。然而空下来的时候，我还是会想下围棋，想和他下围棋，此时我意识到对我而言围棋的问题还有很多。为什么？明明有他在就够了，我的问题始终应该是无足轻重的啊。我以为即便是我也能坚持这一丁点的原则，但他让我变得自私了。当然，我并不是否认他独一无二的才能，只是觉得问题也可能出在他获胜的方式上。他获胜的方式和我们之间的关系，两者中至少有一个不正常。你们能想象吗？我觉得我不该待在他身边。”</p>
 <p>他絮絮叨叨地说了很多，时而停下来思考，脸色始终苍白，看不出情绪波动。</p>
-<p> </p>
+<p> </p>
 <p>Day 6</p>
 <p>“不好意思。帮我这种人准备早餐已经很烦了，我居然还厚着脸皮提要求，真是太对不起了。但是，能不能拜托你们……不要再拿这种东西给我吃。”狛枝把草饼推出餐盘倒进垃圾桶。</p>
 <p>左右田咬紧了他的鲨鱼牙，这个白毛软烂男的挑食在成年人中简直闻所未闻。他借口去卫生间，其实躲到紧急通道楼梯间里给厨师打了一通电话，同意了厨师反复提议的在狛枝的食物里下媚药的点子。然而晚上，狛枝又说没有胃口，什么都没吃就早早地上床睡觉了。趁着同事走开的五分钟，左右田通过外部按钮疯狂地反复开关房间里所有的灯，极力破坏狛枝的睡觉体验。狛枝不得不用被子盖住脑袋，一边卷着被子打滚一边在里面发出听不清内容的抗议。</p>
-<p> </p>
+<p> </p>
 <p>Day 7</p>
 <p>送早餐的工作人员把掺了媚药的面包牛奶和没掺药的草饼投放到房间里，金属餐盘与地面碰撞的声音吵醒了脑袋仍然缩在被窝深处的狛枝。看清那盘食物后，狛枝打了个哈欠，躺下继续睡了。又过了半小时，他才渐渐抬起蓬松的脑袋，叹了一口气，极不情愿地穿好衣服来到早餐前，拿起草饼。</p>
 <p>偏偏拿了昨天他还深恶痛绝的唯一没掺药的食物，左右田很受打击，要不是同事在旁边，他真想立刻打开话筒骂脏话。</p>
@@ -182,20 +246,20 @@ Day 2</p>
 <p>“别让我……一个人死……”狛枝断断续续地讲。左右田用双手捂紧耳机试图捕捉到低低的喘息声之间夹杂的话语。</p>
 <p>“……君。”</p>
 <p>应该是一个名字。</p>
-<p> </p>
+<p> </p>
 <p>Day 8</p>
 <p>狛枝发高烧了。</p>
-<p> </p>
+<p> </p>
 <p>Day 11</p>
 <p>狛枝的烧退了。</p>
-<p> </p>
+<p> </p>
 <p>Day 12</p>
 <p>“嗨！早上好。”狛枝抱膝思考状坐在床上，靠着床头板。说完这句话后，他沉默了一段时间才再次开口。左右田已经习惯了他注重节奏感的自言自语方式。</p>
 <p>“能帮我联系日向创吗？告诉他我现在遇到一点麻烦，如果有空的话希望他能来见我一面。”</p>
 <p>“我猜也许你们不想把这里的地址透露出去，没关系，只要把这两句话传达到就行了，剩下的他会自己想办法。对了，说不定全国有一千个名字叫日向创的人，怎么能不考虑到这一点，毕竟它实在太普通了！真是适合日向君的名字！而我说的这个日向创的地址是……”</p>
 <p>听到这个名字，左右田也感到耳熟，仔细想了想，认识的人里好像又没有叫这个名字的人，看来的确是个很大众的名字。</p>
 <p>“你相信平行宇宙吗？那种小说里的Alternative Universe。”同事对他说。天哪，这个时代还煞有介事地以小说为例拿平行宇宙出来说事的人八成是既不懂平行也不懂宇宙可能还挂掉了大学物理课的人吧，左右田心想。不过他现在已经不是愣头高中生了，他抑制住嘲笑前辈的冲动，哈哈一笑：“日向创可能是某个平行宇宙里的老朋友吧。”</p>
-<p> </p>
+<p> </p>
 <p>Day 13</p>
 <p>早上接到门卫室打来的电话，有个未预约的日向先生想乘坐我们的电梯，左右田帮他通过了。几分钟后，一个穿黑西装步履沉重的男人出现在房间外侧的监控画面里，站在玻璃墙边朝粉红色的草莓房间里看。</p>
 <p>“嘿。”日向创用拳头敲敲玻璃墙。</p>
@@ -224,37 +288,31 @@ Day 2</p>
 <p>狛枝从鼻子里哼了一声，放下杂志舒舒服服地伸了一个懒腰。</p>
 <p>“你再不说我就走了。我要回去收快递……买了扫地机器人，”日向皱紧眉毛看向一边，挠挠头说，“还有洗碗机之类的。”这是在暗示家里很乱，从而暗示狛枝应该回家，从而暗示谈和的意愿，这已经是极限了，日向绝不要认错，说到底他就没有错。不巧狛枝也是这么想的：“真不错，正好没有人类受得了你，你就和扫地机器人一起生活吧。”</p>
 <p>日向不耐烦地摆了摆手，转身离开了。</p>
-<p> </p>
+<p> </p>
 <p>Day 14</p>
 <p>日向先生又回来了，态度比昨天谦和一些，奇妙的是狛枝的态度也缓和了一些。一见面，他们不约而同地采用平静的语气开始商量狛枝怎样才能离开不做爱就出不去的房间，就好像昨天的争吵从来没发生过一样。狛枝坦然陈述了一遍他这段时间尝试过的所有一个人做爱的方法，令左右田很想摘下耳机躲进他内心的处男角落里，注意到画面里的日向也在频繁地挠头和摇头时，他感觉他和日向的心理距离缩短了。</p>
 <p>一段时间后，狛枝也没什么话说了。日向去大厅的饮料贩卖机买了两瓶饮料，蓝羊，这可能是那台贩卖机设立至今第一次和第二次卖出蓝羊，左右田一直奇怪怎么会有人爱喝蓝羊。日向回到房间门口，试图把一瓶蓝羊从送餐口塞进去，但他没有打开送餐口的权限。后来他又尝试从玻璃墙上面扔进去，试了好几次也没成功，直到蓝羊落下来砸到他的脑袋才放弃，坐在外面自己开了一瓶喝起来。尽管没喝到蓝羊，狛枝看起来很开心。</p>
 <p>离开之前日向把喝了一小半的蓝羊扔进垃圾桶，另一瓶带走。左右田总觉得日向也不爱喝蓝羊，应该只有房间里面那个怪胎爱喝，又感到他和日向的心理距离进一步缩短了。</p>
-<p> </p>
+<p> </p>
 <p>Day 15</p>
 <p>“你别再来了。多好的机会啊，日向君终于摆脱我了。”</p>
 <p>“说真的，从一开始，你为什么要进去？”日向脑门抵在玻璃墙上，呼出的气形成一小块白雾。</p>
 <p>狛枝凪斗把下巴搁在交叠的手臂上闭上眼睛休息。</p>
 <p>“你走吧，我会出去的。”</p>
 <p>“出来了第一时间来找我。”日向用一种他自己也没想到的恳求的语气说，之后也没有再多说什么，早早离开了。</p>
-<p> </p>
+<p> </p>
 <p><br/>
 Day 19</p>
 <p>话筒开始接触不良，每说一个字就都像在话筒里放烟花。狛枝在浴室里抱怨喷头的水压太弱，水流声盖过了同事发出的烟花声。</p>
 <p>经讨论，我们认为我们犯了一个错误，话筒从一开始就不应该被设置。为了维护严肃性，房间应该是不可对话的，被试者和包括部分工作人员在内的房间之间并不必要有直接互动。即使在不得不产生互动的紧急情况下，工作人员应该尽可能以被试着与房间之外的第三类身份介入。这个制度对事实的反映更佳，因为左右田和他的同事都不能控制房间，也不知道房间的工作原理，因而将来也不能够控制房间，他们和狛枝的区别仅仅是他们在房间外面。<br/>
 最后左右田把话筒拆除，在空出来的位置上装了放冰啤酒的迷你桌上冰箱。</p>
-<p> </p>
-</div>
-<!--/chapter content-->
-
-
+<p> </p>
 
 <div class="meta group">
   <h2 class="heading">Chapter 2</h2>
 
 
 </div>
-
-<!--chapter content-->
   <p>Day 23</p>
 <p>值晚班时，同事对左右田说：你这个位置空出来，是因为前面五个人连续辞职。他们辞职的原因是值晚班时总是被人从后面拍肩膀，回头看去身后却什么也没有。这个东西习性类似智齿，一旦它发现有人察觉到了它的存在，从此不管走到哪里，它都会跟着，随你的每一个细微动作在黑暗中灵巧地转动眼珠。每当你非常快活的时候，忘记了它的时候，它就会拍拍你的肩膀，从触觉上制造轻微的不适感，提醒你它一直在。</p>
 <p>左右田认为世界上不可能有鬼，但是生活中的很多东西他都害怕，自然而然地也害怕鬼，不管鬼存不存在，总之要先害怕一会儿。听了这个故事后，他对于自己值晚班和同事出差时间段恰好重合的安排产生了强烈的抵触情绪。自己一个人待在这栋楼里时，甚至感到比平常更加寒冷，无意间也开始像狛枝一样自言自语，紧紧地双手捂住耳机以盖住半边脸保暖。这样过了一会儿，他感觉好像缺了点什么，才想起一直都是他自己在说话，他的监视对象已经有几小时没说过话了。刚吃完晚饭的时候，狛枝好像在摆弄空调控制屏和三个电吹风，然后人又不知道钻到哪里去了。按照规定左右田应该去玻璃墙看看，但现在他极其不想离开明亮的监控室走进外面那条藏有无数阴暗角落的曲折的走廊里去。</p>
@@ -270,7 +328,7 @@ Day 19</p>
 <p>“就是他干的！混蛋，我居然同情他，我还觉得他一个人被关在里面很害怕！”</p>
 <p>“不会的，他害怕的时候不会……不会让你看出来他在害怕。他会那样的。”</p>
 <p>读取到日向语气里的不安，左右田受感染地搜寻狛枝的身影，他经常在对应各个角落的摄监视范围之间穿梭，有时要花一段时间才能找到他。余光里，左侧的一块屏幕似乎暗了下来；他扭头去看，屏幕上被一只巨大的眼睛遮住，然后逐渐变成一张凑得极近的脸，眼神疯狂的志愿者正趴在衣柜顶上对摄像头展露笑容。</p>
-<p> </p>
+<p> </p>
 <p>Day 24</p>
 <p>左右田看着他从容不迫地、一步一步地走近门。<br/>
 他站在那里，轻微晃动脑袋，头发也跟着晃动；与脑袋有几毫秒的延迟，但看起来还是十分灵敏，让人担心盯久了是否会增加患上癫痫的风险。</p>
@@ -283,10 +341,10 @@ Day 19</p>
 <p>“我真傻……居然相信这个房间里有完全多余的东西。”他一边挣扎着从地上站起来一边扯掉头上的纸袋，“这样推测吧：这十五个监控摄像头覆盖所有角落，我没有任何隐私可言。毕竟是以做爱为识别目标的房间嘛，里面当然是没有保留任何隐私的余地的。没关系！像我这样的人怎么好意思说什么人权呢，也太厚脸皮啦。”</p>
 <p>从左右田的角度看，他说得有道理，但不完全正确，事情往往是这样。实际上这个房间里装了二十八个摄像头，但仍然存在许多监控死角，比如床底下靠近墙和床脚的一块接近一平方米的面积，无论怎样调整附近布置的三个监控摄像头的角度都不会出现在左右田的屏幕上。如果狛枝有本事在那里自己一个人做爱，也许房间会漏过这个信号继续把他关在里面，也许不会，一切都说不定。左右田有时会想监控在房间的运作中到底起到什么样的作用，而他自己的眼睛对于房间的监控又起到了什么样的作用，难道房间知悉他在观察，他的肉眼能够为没有眼睛的房间所利用，如果不是，他坐在这个监控室里的意义又是什么。如此下去，总有一天连存在的意义也值得怀疑了。可能是一个人待在监控室里太久神经变得过度敏感，左右田决定离开工位，乘上电梯，找个有窗户的地方往外面看一看。</p>
 <p>透过窗户看见塔台上的Nevermind小姐的一瞬间，左右田就知道他恋爱了。金色的长发，白皮肤，绿眼睛，那优雅的姿态，简直是一位真正的公主。晚上闭上眼睛，左右田发现Nevermind小姐的形象已经文在他的眼皮内侧，并且一天不见，一天以后她的形象就变得更加美丽，那天下午夕阳围绕她的金色发梢金色的辉光不断羽化、扩散，Nevermind小姐蚕食着塔台上剩余的风景。就同事说，她的确是来旅游参观的欧洲某个小国的公主。是公主啊！是公主啊！左右田在空气中做出激动地锤桌子的动作，你这一辈子难道不想跟金发的白人女性交往一次吗？左右田不是一个容易在身份地位上产生自卑感的人，在该领域也无追求，可以看出他发自真心地只是单纯喜欢上了Nevermind小姐的脸，然后又喜欢上Nevermind小姐。正因如此，这份感情是十分纯粹的。</p>
-<p> </p>
+<p> </p>
 <p>Day 25</p>
 <p>狛枝花了一小时用牙刷敲玻璃杯，在草莓地毯上挖了许多小洞，然后看着天花板捧腹大笑。</p>
-<p> </p>
+<p> </p>
 <p>Day 29</p>
 <p>很晚的时候，狛枝从床上坐起来，扭动上半身左顾右盼，表情严肃专注，然后保持那个姿势停住不动了。</p>
 <p>“完了，又开始了。”左右田对自己说，并默默把操作手册翻到后面，提前翻看起来。耳机里传出狛枝平稳安静的嗓音：“外面在下雨吗？”</p>
@@ -296,7 +354,7 @@ Day 19</p>
 <p>“原来如此，在我的脑袋里面。”他十分愉快地笑出了声，从床上摸下来找出衣柜里的玩具，他最爱的草莓味润滑剂，左右田甚至看见他吃掉过半瓶；他最爱的震动棒之一，这次拿了很大号的一根；在黑暗中缩进床上一个靠墙的角落。从声音听来，这次比以往还严苛，这名志愿者真是个疯狂的受虐狂，总是能把自己逼到极限，折磨到站不起来。水和肉体撞击的淫荡声音格外激烈，包括他一向夸张丰富的呻吟方式也和以往不同，就好像被胁迫着一样突兀地停顿、突然上拐。“你没事吧？”问出口后左右田觉得自己很傻，但他只是有点担心狛枝的身体能不能承受得了这么激烈的运动。左右田曾经想过去问日向他这样正不正常，发现日向似乎很感兴趣的时候，他就不想说了。“关我屁事”，他最后决定。</p>
 <p>听到狛枝断断续续的走调的叫声，左右田没来由地想象到Nevermind小姐双手交叠安静地站在他面前，对他露出最无害的一种狛枝般的微笑，便瞬间满脸通红，裤裆缩紧。他现在更讨厌狛枝一点了。</p>
 <p>狛枝终于累了， 像块抹布一样皱着趴在床上，身体渐渐降温，渐渐缩进被子里，然后睡着了。门仍然纹丝不动。</p>
-<p> </p>
+<p> </p>
 <p>Day 30</p>
 <p>秋天，在街上遇见预备科。他刚从医院出来，拎着一袋药，带紫色字样的白盒子，蓝盒子，底下橙色的长方形盒子特别扁，打开来看仍然非常鲜艳。预备科向他走来却不打招呼，狛枝才想起，他长久地站在这棵积留雨水且发黄落叶的梧桐树下正是因为在等他。穿着黑西装的预备科走近，把药递到他手里，脸上是他常有的重重忧虑。他穿黑西装挺帅的，那个预备科。</p>
 <p>一起往前走了四米左右，地上落叶踩得嘎啦嘎啦响，日向用单手扣紧衬衫最上面的一颗扣子，同时眼神不接触、尽可能漫不经心地问身边的人这些你都吃吗，他点头。</p>
@@ -317,23 +375,23 @@ Day 19</p>
 <p>这句话不知怎的激怒了他，狛枝发现自己被拎着举起来，强力的手腕掐紧脖子，简直像上吊一样紧，几乎无法呼吸。他早就发现预备科的日向君力气很大，肉体上没有反抗的可能，不应该惹他，将来还会再犯。</p>
 <p>“感觉……好些了吗……？”于是狛枝十分艰难地使用喉咙，感觉自己的性命正随着颈部动脉震耳欲聋的鼓动飞快凋零，还想努力挤出最后一个微笑。</p>
 <p>“我感觉好极了。”他的眼睛里涌出浓稠的红色液体。</p>
-<p> </p>
+<p> </p>
 <p>看到狛枝醒过来，左右田整个人都从椅子上瘫了下去。如果被试者梦游自杀该怎么办，哪里会有人想到这么具体的突发事件啊，为什么刚来这里上班偏偏就让他遇到这种麻烦事情。每个人都可以选择轻松的生活方式。我认为大部分人适合的是幸福快乐的生活，而不是志愿滑向各种深渊的边缘生活。当被问起做过的最疯狂的事情，答案最好是追女孩的故事，而不是烧房子。保持正常的第一步是社交时确保自己和其他人对常见词语的理解一致。狛枝凪斗正在失去“正常”的来源，他给15天前粘在餐盘上洗不掉的不规则形状污渍取了一个没法用标准发音念出来的名字，总是管莫名其妙的东西叫希望，干净袜子和脏袜子在不同的论证下都充满希望，都让他感动得热泪盈眶。</p>
 <p>“不要死也不要搞事就那么难吗？”左右田继续从椅子上往下滑，直到蹲在地上抱头痛哭，打了一会儿嗝又渐渐想开了，毕竟他总是可以放弃这个问题，离开监控室，爱上Nevermind小姐，狛枝却在这个问题中活下去。</p>
-<p> </p>
+<p> </p>
 <p>Day 32</p>
 <p>房间例行清扫完成后，狛枝一本正经地站在房间中间，好像在为一个重大决策做出最后一步思考。</p>
 <p>一段时间后，他走到一个安装位置较低的摄像头前说：“再帮我叫日向创来一次吧……唉，你们发现了吧，一和他待在一起情绪就不太容易控制，他的气人水平真是超高校级的呢。像日向君那样的缺乏自信的人很会自作多情，你们根本想不到他的脑子会把事情解读成什么样子。他背地里肯定在想我出不去这个房间是因为不是他就不行，因为已经变成他的形状了，哇啊，真恶心……”</p>
 <p>“做不到啊。”左右田翻了翻操作手册重新确认了一遍，同一个要求只能满足最多一次，但话筒已经拆除，他没法直接告诉他，只能等他自己领会。</p>
 <p>“还有一件事，虽然他从没说出口，我就是知道。有时候他看我的眼神很奇怪，我想了一下，应该就是想杀人的眼神吧。没关系，我很乐意被他杀掉，这也说了太多遍，一年又一年，他却迟迟没有下手……日向君究竟要让我等到什么时候呢？”</p>
-<p> </p>
+<p> </p>
 <p>Day 35</p>
 <p>他睡得很多，没怎么活动。有时看着墙上的彩灯发呆。应该是在等日向。</p>
-<p> </p>
+<p> </p>
 <p>Day 36</p>
 <p>狛枝情绪低落，一直试图把卸下的淋浴喷头装到电机马达上。另外有个天大的噩耗，Nevermind小姐很快就要回国了。左右田才刚刚取得一点点进展；周末陪Nevermind小姐坐过山车，吐了一地，但Nevermind小姐觉得他吐的样子很好玩，所以玩得很开心。</p>
 <p>左右田靠在转椅上灵魂出窍……他想要找到Nevermind小姐，向她告白，去世界各地旅行，在所有的房间里做爱……他把操作手册合上扔到一边，然后觉得还差点意思，又拿回来撕成五瓣扔进垃圾桶才满意地离开监控室，去寻找一把钳子。</p>
-<p> </p>
+<p> </p>
 <p>Day 40</p>
 <p>“我要出去。”左右田带着钥匙卡和工作证乘电梯来到出口。外面的空气有些刺鼻，令人想流泪。</p>
 <p>门外是正在研究电梯开关的尴尬的日向创。左右田把包里的东西交给他，不等他询问，就向走廊尽头去，越跑越快。</p>
@@ -341,67 +399,36 @@ Day 19</p>
 <p>“没——关——系——！”左右田离日向已经很远，因而拖长声音呐喊，这让他想起Nevermind小姐，不由得微笑起来。他用双手推开出口铸有厚重夹层的玻璃大门，让自然光透进来。五分钟内，这栋大楼的警报系统因物理故障瘫痪，房间和房间的电子眼暂时被剥夺一切权力和尊严，反过来受人摆布。游戏规则因再也没有人关心而失效，四名参与者就要以作弊的方式相见，我们的实验以失败告终。</p>
 
     </div>
-    <footer class="article-footer">
-      <div class="article-meta">
-        <span class="label">Published Date:</span>
-        <a href="/2020/10/02/room/" class="article-date">
-  <time datetime="2020-10-02T15:47:56.000Z" itemprop="datePublished">2020-10-02</time>
-</a>
 
 
-        <hr />
-      </div>
-    </footer>
-  </div>
-   
-<nav id="article-nav" class="article-nav">
-  
-  <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
-   
-  <a
-    href="/2020/06/24/library/"
-    id="article-nav-older"
-    class="article-nav-link-wrap older"
-  >
-    <strong class="article-nav-caption">next &gt;</strong>
-    <div class="article-nav-title">继父的图书馆</div>
-  </a>
-  
-</nav>
-
- 
 </article>
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/mob%E7%8B%9B/">mob狛</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E7%8B%9B/">日狛</a><span class="category-list-count">1</span></li></ul>
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li></ul>
 
 
-      </div>
-      
-        <footer id="footer" class="post-footer footer">
-          
-          <hr />
-          <div id="footerContent" class="footer-content">
-            <p>警戒せよ。今晩最初のコロシアイが起きる。<br>必ず誰かが誰かを殺す。</p>
- 
-          </div>
-        </footer>
-      </div>
-    </footer>
-  </div>
-</footer>
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
 
-      <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Explicit/" rel="tag">Explicit</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mature/" rel="tag">Mature</a><span class="tag-list-count">1</span></li></ul>
 
- 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
- 
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-  
-<script src="/js/typing.js"></script>
-
-<!--[if lt IE 9
-  ]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script
-><![endif]-->
-
+            </section>
+        </aside>
     </div>
-  </body>
+</body>
+
 </html>
