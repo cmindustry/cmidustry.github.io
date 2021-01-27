@@ -3,7 +3,7 @@
 }
 .header h1,
 .header h2 {
-  margin: 0;
+  margin-bottom: 2em;
   line-height: 1.2;
 }
 .header .title a {
@@ -19,29 +19,6 @@
   margin: 0.5em 0 0.25em;
   font: 18px Sans-Serif;
   color: #bbb;
-}
-.header .links {
-  height: 40px;
-  margin: 2.25em auto 4.5em;
-  font: 300 0.7em Sans-Serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.header .links ul {
-  text-decoration: none;
-  padding: 0;
-}
-.header .links ul li {
-  display: inline-block;
-  margin: 0 0.5em;
-}
-.header .links ul li a {
-  color: #999;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.header .links ul li a:hover {
-  color: #c2c8c2;
 }
 .header .ipad-menu {
   display: none;
@@ -320,6 +297,36 @@
     left: 15px;
     height: 33px;
   }
+}
+.aside-section.instruc {
+  font-size: 0.7em;
+  color: #999;
+  text-align: left;
+  padding: 0.5em;
+}
+.links {
+  height: 40px;
+  margin: 2.25em auto 4.5em;
+  font: 300 0.8em Sans-Serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.links ul {
+  text-decoration: none;
+  padding: 0;
+}
+.links ul li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.links ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.links ul li a:hover {
+  color: #c2c8c2;
 }
 body {
   font-size: 1rem;
