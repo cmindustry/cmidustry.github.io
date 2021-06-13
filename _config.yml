@@ -5,7 +5,7 @@
 # Site
 title: CMIndustry
 subtitle: 
-description: 
+description: "分级说明：沿用AO3的分级, Explicit-详尽黄或暴描写； Mature-含有成人内容（黄或暴）； Teen-适合13岁以上人群； General-适合所有人"
 keywords:
 author: 
 language: zh-CN
@@ -98,5 +98,5 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github:cmindustry/cmindustry.github.io.git
+  repo: git@github.cmi:cmindustry/cmindustry.github.io.git
   branch: master
