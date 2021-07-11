@@ -27,7 +27,7 @@
     "highlight.js": "^11.0.1"
   },
   "resolutions": {
-  "stylus": "^0.54.8",
-  "source-map-resolve": "^0.6.0"
-}
+    "stylus": "^0.54.8",
+    "source-map-resolve": "^0.6.0"
+  }
 }
