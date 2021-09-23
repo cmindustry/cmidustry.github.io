@@ -8,8 +8,7 @@ description: 继父有一座图书馆。感谢匿名的朋友的蟑螂，所以�
 ---
 
 
-
-<style type="text/css">p.message{text-align:center}.meta h1{font-size:1.5em;text-align:center}.meta h2{font-size:1.25em;text-align:center}.meta h2{page-break-before:always}.meta .byline{text-align:center}.meta dl.tags{border:1px solid;padding:1em;vertical-aligh:bottom;font-size:0.8em}.meta dd{margin:-2em 0 0 10em;display：inline}.meta .endnote-link{font-size:.8em}#chapters{font-family:"Nimbus Roman No9 L","Times New Roman",serif;padding:1em}.userstuff{font-family:"Nimbus Roman No9 L","Times New Roman",serif;padding:1em}.toc-heading{display:none}.note{color:#1c1c1c;text-align:left;font-size:0.8em;margin:1em} </style>
+<style type="text/css">p.message{text-align:center}.meta h1{font-size:1.5em;text-align:center}.meta h2{font-size:1.25em;text-align:center}.meta h2{page-break-before:always}.meta .byline{text-align:center}.meta dl.tags{border:1px solid;padding:1em;vertical-aligh:bottom;font-size:0.8em}.meta dd{margin:-1.5em 0 0 10em;display：inline}.meta .endnote-link{font-size:.8em}#chapters{font-family:"Nimbus Roman No9 L","Times New Roman",serif;padding:1em}.userstuff{font-family:"Nimbus Roman No9 L","Times New Roman",serif;padding:1em}.toc-heading{display:none}.note{color:#1c1c1c;text-align:left;font-size:0.8em;margin:1em} </style>
   <div class="meta">
     <dl class="tags">
           <dt>Rating:</dt>
