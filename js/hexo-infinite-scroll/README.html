@@ -1,0 +1,76 @@
+<h1 id="hexo-infinite-scroll"><a href="#hexo-infinite-scroll" class="headerlink" title="hexo-infinite-scroll"></a>hexo-infinite-scroll</h1><p><a href="https://codeclimate.com/github/FrontendSophie/hexo-infinite-scroll/maintainability"><img src="https://api.codeclimate.com/v1/badges/2027fb1201b8dbe0ea7f/maintainability" alt="Maintainability"></a><br><a href="https://github.com/FrontendSophie/hexo-infinite-scroll/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a><br><a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="code style: prettier"></a></p>
+<blockquote>
+<p>⌛ A fake infinite loading plugin for hexo.</p>
+</blockquote>
+<p><a href="http://ssnowy.coding.me/demo-autumn/">View demo</a></p>
+<h2 id="Install-amp-Usage"><a href="#Install-amp-Usage" class="headerlink" title="Install &amp; Usage"></a>Install &amp; Usage</h2><p>Check <code>head.ejs</code>(or <code>head.swig</code>) in the theme folder and add:</p>
+<pre><code>&lt;script src=&quot;https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js&quot;&gt;&lt;/script&gt; 
+&lt;script&gt;
+    infiniteScroll()
+&lt;/script&gt;
+</code></pre>
+<h4 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h4><p>In case not working, please check <code>_config.yml</code> and set all the <code>per_page</code> to 0 to disable pagination.</p>
+<h2 id="Config"><a href="#Config" class="headerlink" title="Config"></a>Config</h2><table>
+<thead>
+<tr>
+<th align="left">key</th>
+<th>description</th>
+<th>default</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">post</td>
+<td>selector of post</td>
+<td>‘.post’</td>
+<td>string</td>
+</tr>
+<tr>
+<td align="left">showNum</td>
+<td>posts show number per scroll</td>
+<td>3</td>
+<td>number</td>
+</tr>
+<tr>
+<td align="left">loadTime</td>
+<td>loading animation show time(ms)</td>
+<td>400</td>
+<td>number</td>
+</tr>
+<tr>
+<td align="left">style</td>
+<td>class Name of loader</td>
+<td>‘line-scale’</td>
+<td>string</td>
+</tr>
+<tr>
+<td align="left">color</td>
+<td>color of loader</td>
+<td>‘#f78769’</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h4 id="About-Loaders"><a href="#About-Loaders" class="headerlink" title="About Loaders"></a>About Loaders</h4><p>Loaders are all generated through <a href="https://github.com/ConnorAtherton/loaders.css">loaders.css</a> by ConnorAtherton.<br><a href="https://connoratherton.com/loaders">Click to preview</a> and pick up what you like. Then set its className to the config, for example:</p>
+<pre><code>infiniteScroll({
+    style: &#39;ball-pulse&#39;
+})
+</code></pre>
+<p>🎉</p>
+<h2 id="About-v2"><a href="#About-v2" class="headerlink" title="About v2"></a>About v2</h2><h4 id="Improvements"><a href="#Improvements" class="headerlink" title="Improvements"></a>Improvements</h4><ul>
+<li>Abandoned jquery and embraced TypeScript.</li>
+<li>Simplified install process, bundled js and css into one file.</li>
+<li>Fixed Android scroll bug.</li>
+<li>More loader options coming from loaders.css.</li>
+</ul>
+<h4 id="Breaking-changes-from-v1"><a href="#Breaking-changes-from-v1" class="headerlink" title="Breaking changes from v1"></a>Breaking changes from v1</h4><ul>
+<li>API: <ul>
+<li>v2 flattened and renamed API to be more readable.</li>
+<li>v2 removed <code>loading.enabled</code> option which means loader will always display.</li>
+</ul>
+</li>
+<li>Loaders: <ul>
+<li>v2 replaced old loaders with new loaders from loaders.css.</li>
+</ul>
+</li>
+</ul>
+<p>v1 is still available and its source code is now under <code>v1/</code> folder.</p>

@@ -1,0 +1,368 @@
+.header {
+  text-align: center;
+}
+.header h1,
+.header h2 {
+  margin-bottom: 2em;
+  line-height: 1.2;
+}
+.header .title a {
+  color: #c00;
+  text-decoration: none;
+  font: 300 3rem Serif;
+  transition: 0.3s;
+}
+.header .title a:hover {
+  color: #bbb;
+}
+.header .desc {
+  margin: 0.5em 0 0.25em;
+  font: 18px Sans-Serif;
+  color: #bbb;
+}
+.header .ipad-menu {
+  display: none;
+  position: fixed;
+  top: 4em;
+  left: -1px;
+}
+.header .mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 3em);
+  padding: 0 1.5em;
+  height: 3em;
+  z-index: 1;
+}
+.header .mobile-menu h3 a {
+  color: #b30000;
+  text-decoration: none;
+  font: 300 1.6rem Serif;
+  letter-spacing: -3px;
+  text-shadow: 1px 1px 2px #ddd;
+}
+.header .menu {
+  padding-right: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #b30000;
+  text-shadow: 1px 1px 2px #ddd;
+}
+@media screen and (max-width: 1015px) {
+  .header .ipad-menu {
+    display: block;
+    text-decoration: underline;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header .title a {
+    font-size: 2.5rem;
+  }
+  .header .ipad-menu {
+    display: none;
+  }
+  .header .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .mobile-menu .menu {
+    font: 500 1.4em Serif;
+  }
+}
+.post {
+  position: relative;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent 30%, #c00, transparent 70%) 0 0 1 0;
+  margin: 0 1em 2em;
+  padding: 0 0 1em;
+}
+.post .post-cat {
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
+.post .post-cat:before {
+  content: "/";
+  color: #777;
+}
+.post .post-cat:last-of-type::after {
+  content: '';
+}
+.post .post-cat a {
+  font: 300 13px Sans-Serif;
+  color: #777;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.post .post-cat a:hover {
+  color: #c00;
+}
+.post .post-tag {
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
+.post .post-tag:before {
+  content: "#";
+  color: #777;
+}
+.post .post-tag:last-of-type::after {
+  content: '';
+}
+.post .post-tag a {
+  font: 300 13px Sans-Serif;
+  color: #777;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.post .post-tag a:hover {
+  color: #c00;
+}
+.post .post-title {
+  margin: 0;
+  font: 400 1.6em Sans-Serif;
+  color: #222;
+}
+.post .post-title a {
+  color: #222;
+  text-decoration: none;
+}
+.post .post-date {
+  padding: 5px;
+  margin: 0;
+  color: #777;
+  font: 300 12px/1.6 Sans-Serif;
+  letter-spacing: 1px;
+}
+.post .post-cover {
+  position: relative;
+  user-select: none;
+}
+.post .post-cover:after {
+  position: absolute;
+  content: '';
+  width: 82%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 40px 10px #fff inset;
+}
+.post .post-cover img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+.post .post-content {
+  position: relative;
+  color: #111;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 1.5em 0 0 0;
+  text-align: left;
+}
+.post .post-content a {
+  color: #111;
+  text-decoration: underline #a0c8c2;
+}
+.post .post-content a.more-link {
+  color: #222;
+  font-family: Sans-Serif;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.post .post-content a.more-link:hover {
+  color: #c00;
+}
+.post .post-content img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.aside {
+  overflow: hidden;
+  width: 25%;
+  float: right;
+  padding-left: 20px;
+  border-left: 1px solid #c2c8c2;
+}
+.close {
+  display: none;
+  position: absolute;
+  right: 1.5em;
+  top: 1em;
+  width: 24px;
+  height: 24px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 24px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+.aside-section {
+  padding-left: 2em;
+  margin: 0 0 3em;
+}
+.aside-section h1 {
+  font: 1.25em/1.2 Sans-Serif;
+  margin: 0;
+  color: #333;
+}
+.aside-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.aside-section ul li {
+  margin-top: 0.6em;
+  padding-top: 0.6em;
+}
+.aside-section ul li a {
+  color: #c00;
+  text-decoration: none;
+  font: 14px Sans-Serif;
+  transition: 0.3s;
+}
+.aside-section ul li a:hover {
+  color: #ddd;
+}
+.aside-section ul li span {
+  margin-top: 0.6em;
+  padding-top: 0.6em;
+  color: #c00;
+  font-size: 0.6em;
+}
+.aside-section ul li span:before {
+  content: "[";
+}
+.aside-section ul li span:after {
+  content: "]";
+}
+.aside-section.tag li {
+  display: inline-block;
+  border: none;
+  margin: 0 10px 0 0;
+}
+.aside-section.tag li:before {
+  content: "#";
+  color: #c00;
+}
+@media screen and (max-width: 1015px) {
+  .aside {
+    display: none;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 28%;
+    height: 100vh;
+    padding: 3em 20px 0;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #ddd;
+  }
+  .aside .close {
+    display: block;
+  }
+}
+@media screen and (max-width: 640px) {
+  .aside {
+    width: calc(100% - 40px);
+    box-shadow: none;
+  }
+  .aside .close {
+    width: 32px;
+    height: 32px;
+  }
+  .aside .close:before,
+  .aside .close:after {
+    left: 15px;
+    height: 33px;
+  }
+}
+.aside-section.instruc {
+  font-size: 0.7em;
+  color: #777;
+  text-align: left;
+  padding: 0.5em;
+}
+.links {
+  height: 40px;
+  margin: 2.25em auto 4.5em;
+  font: 300 0.8em Sans-Serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.links ul {
+  text-decoration: none;
+  padding: 0;
+}
+.links ul li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.links ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.links ul li a:hover {
+  color: #c2c8c2;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.container {
+  max-width: 1142px;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 3em 5%;
+  background: #fff;
+  margin: 3em auto;
+  overflow: hidden;
+}
+.container .main {
+  width: 70%;
+  float: left;
+  text-align: center;
+}
+.invisibile {
+  visibility: hidden;
+}
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 1015px) {
+  .container .main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    margin: 3em 0 0;
+    width: 100%;
+    padding: 1.75em;
+  }
+}

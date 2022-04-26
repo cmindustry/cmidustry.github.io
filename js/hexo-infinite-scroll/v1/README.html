@@ -1,0 +1,89 @@
+<h1 id="deprecated-x68-101-120-111-45-105-x6e-x66-105-x6e-105-x74-x65-45-x73-x63-114-x6f-x6c-108-64-49-x2e-48-x2e-48"><a href="#deprecated-x68-101-120-111-45-105-x6e-x66-105-x6e-105-x74-x65-45-x73-x63-114-x6f-x6c-108-64-49-x2e-48-x2e-48" class="headerlink" title="[deprecated]&#x68;&#101;&#120;&#111;&#45;&#105;&#x6e;&#x66;&#105;&#x6e;&#105;&#x74;&#x65;&#45;&#x73;&#x63;&#114;&#x6f;&#x6c;&#108;&#64;&#49;&#x2e;&#48;&#x2e;&#48;"></a>[deprecated]<a href="mailto:&#x68;&#101;&#120;&#111;&#45;&#105;&#x6e;&#x66;&#105;&#x6e;&#105;&#x74;&#x65;&#45;&#x73;&#x63;&#114;&#x6f;&#x6c;&#108;&#64;&#49;&#x2e;&#48;&#x2e;&#48;">&#x68;&#101;&#120;&#111;&#45;&#105;&#x6e;&#x66;&#105;&#x6e;&#105;&#x74;&#x65;&#45;&#x73;&#x63;&#114;&#x6f;&#x6c;&#108;&#64;&#49;&#x2e;&#48;&#x2e;&#48;</a></h1><p><a href="https://codeclimate.com/github/FrontendSophie/hexo-infinite-scroll/maintainability"><img src="https://api.codeclimate.com/v1/badges/2027fb1201b8dbe0ea7f/maintainability" alt="Maintainability"></a><br><a href="https://www.jsdelivr.com/package/gh/frontendsophie/hexo-infinite-scroll"><img src="https://data.jsdelivr.com/v1/package/gh/frontendsophie/hexo-infinite-scroll/badge"></a><br><a href="https://github.com/FrontendSophie/hexo-infinite-scroll/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a><br><a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="code style: prettier"></a></p>
+<blockquote>
+<p>💮 A fake infinite loading plugin for hexo.</p>
+</blockquote>
+<p><a href="http://ssnowy.coding.me/demo-autumn/">View demo</a></p>
+<h2 id="Installation-amp-Usage"><a href="#Installation-amp-Usage" class="headerlink" title="Installation &amp; Usage"></a>Installation &amp; Usage</h2><p>Check <code>head.ejs</code>(or <code>head.swig</code>) in the theme folder and add below:</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/dist/hexo-infinite-scroll.min.css&quot;&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/dist/hexo-infinite-scroll.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;infiniteScroll();&lt;/script&gt;
+</code></pre>
+<h4 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h4><ul>
+<li>This library depends on <code>jQuery</code>, please make sure <code>jQuery</code> has been loaded.</li>
+<li>In case not working, please check <code>_config.yml</code> and set all the <code>per_page</code> to 0 to disable pagination.</li>
+<li>To abandon animation, simply set <code>loading.enabled</code> to <code>false</code> and leave the css file.</li>
+</ul>
+<h2 id="General-Options"><a href="#General-Options" class="headerlink" title="General Options"></a>General Options</h2><table>
+<thead>
+<tr>
+<th align="left">key</th>
+<th>description</th>
+<th>default</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">item</td>
+<td>target item className</td>
+<td><code>.post</code></td>
+<td>string</td>
+</tr>
+<tr>
+<td align="left">pageSize</td>
+<td>show num at a time</td>
+<td>3</td>
+<td>number</td>
+</tr>
+<tr>
+<td align="left">time</td>
+<td>load time(ms)</td>
+<td>400</td>
+<td>number</td>
+</tr>
+<tr>
+<td align="left">loading</td>
+<td>loading animation options</td>
+<td>{ enabled: true, style: ‘wave’, color: ‘#f78769’ }</td>
+<td>object</td>
+</tr>
+</tbody></table>
+<h2 id="Loading-Options"><a href="#Loading-Options" class="headerlink" title="Loading Options"></a>Loading Options</h2><table>
+<thead>
+<tr>
+<th align="left">key</th>
+<th>values</th>
+<th>default</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">enabled</td>
+<td>true, false</td>
+<td>true</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td align="left">style</td>
+<td><code>wave</code>, <code>line</code>, <code>circle</code></td>
+<td><code>wave</code></td>
+<td>string</td>
+</tr>
+<tr>
+<td align="left">color</td>
+<td>…</td>
+<td><code>#f78769</code></td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h4 id="Style-Preview"><a href="#Style-Preview" class="headerlink" title="Style Preview"></a>Style Preview</h4><ul>
+<li>wave</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/src/img/wave.gif" alt="wave"></p>
+<ul>
+<li>line</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/src/img/line.gif" alt="line"></p>
+<ul>
+<li>circle</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@1.0.0/src/img/circle.gif" alt="circle"></p>
