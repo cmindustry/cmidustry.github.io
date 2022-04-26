@@ -84,7 +84,7 @@ ignore:
 
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: autumn
+theme: atum
 feed:
   type: atom
   path: atom.xml
